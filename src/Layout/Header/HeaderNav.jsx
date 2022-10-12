@@ -1,5 +1,6 @@
 import React from 'react';
 import { Archive, LogOut, Phone, Settings, Users } from 'react-feather';
+import UserImage from '../../assets/images/users/4.jpg';
 
 const HeaderNav = () => {
   return (
@@ -108,7 +109,7 @@ const HeaderNav = () => {
       </li>
       <li className='profile-nav onhover-dropdown pe-0 me-0'>
         <div className='media profile-media'>
-          <img className='user-profile rounded-circle' src='assets/images/users/4.jpg' alt='' />
+          <img className='user-profile rounded-circle' src={UserImage} alt='' />
           <div className='user-name-hide media-body'>
             <span>Emay Walter</span>
             <p className='mb-0 font-roboto'>

@@ -3,7 +3,7 @@ export const routes = [
   {
     path: '/',
     name: 'dashboard',
-    component: <Dashboard />,
+    Component: <Dashboard />,
   },
   //   {
   //     path: '/all_users',

@@ -3,9 +3,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LayoutRoutes from './LayoutRoutes';
 const Routers = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <Routes>
-        <Route path={`/*`} element={<LayoutRoutes />} />
+        <Route exact path={`/*`} element={<LayoutRoutes />} />
       </Routes>
     </BrowserRouter>
   );

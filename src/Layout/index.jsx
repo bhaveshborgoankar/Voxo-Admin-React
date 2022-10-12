@@ -4,7 +4,7 @@ import Footer from './Footer';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import TapTop from './TapTop';
-const MainLayout = () => {
+const MainLayout = (props) => {
   return (
     <>
       <TapTop />
@@ -13,12 +13,9 @@ const MainLayout = () => {
         <div className='page-body-wrapper'>
           <Sidebar />
           <div className='page-body'>
-            {/* <div> */}
             <Outlet />
-            {/* </div> */}
-
-            <Footer />
           </div>
+          <Footer />
         </div>
       </div>
     </>

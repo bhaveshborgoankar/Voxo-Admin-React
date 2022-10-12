@@ -1,3 +1,5 @@
+import { Home, Users, Archive, Box, Tag, Star, Phone, Settings, List, Key, AlignLeft, FileText, LogIn, PlusCircle } from 'react-feather';
+
 export const AllMenus = [
   {
     name: 'General',
@@ -12,12 +14,12 @@ export const AllMenus = [
     name: 'Dashboard',
     path: '/',
     type: 'link',
-    icon: 'home',
+    icon: <Home />,
   },
   {
     name: 'Users',
     active: false,
-    icon: 'users',
+    icon: <Users />,
     children: [
       {
         name: 'All users',
@@ -41,7 +43,7 @@ export const AllMenus = [
   },
   {
     name: 'Orders',
-    icon: 'archive',
+    icon: <Archive />,
     active: false,
     children: [
       {
@@ -63,7 +65,7 @@ export const AllMenus = [
   },
   {
     name: 'Vendors',
-    icon: 'users',
+    icon: <Users />,
     active: false,
     children: [
       {
@@ -80,7 +82,7 @@ export const AllMenus = [
   },
   {
     name: 'Localization',
-    icon: 'users',
+    icon: <Users />,
     active: false,
     children: [
       {
@@ -102,7 +104,7 @@ export const AllMenus = [
   },
   {
     name: 'Product',
-    icon: 'box',
+    icon: <Box />,
     active: false,
     children: [
       {
@@ -119,7 +121,7 @@ export const AllMenus = [
   },
   {
     name: 'Menus',
-    icon: 'align-left',
+    icon: <AlignLeft />,
     active: false,
     children: [
       {
@@ -136,7 +138,7 @@ export const AllMenus = [
   },
   {
     name: 'Coupons',
-    icon: 'tag',
+    icon: <Tag />,
     active: false,
     children: [
       {
@@ -152,26 +154,26 @@ export const AllMenus = [
     ],
   },
   {
-    icon: 'star',
+    icon: <Star />,
     name: 'Product Review',
     path: '/product_review',
     type: 'link',
   },
   {
-    icon: 'archive',
+    icon: <Archive />,
     name: 'Invoice',
     path: '/invoice',
     type: 'link',
   },
   {
-    icon: 'phone',
+    icon: <Phone />,
     name: 'Support Ticket',
     path: 'support_ticket',
     type: 'hyperlink',
   },
   {
     name: 'Settings',
-    icon: 'settings',
+    icon: <Settings />,
     active: false,
     children: [
       {
@@ -183,31 +185,31 @@ export const AllMenus = [
   },
   {
     name: 'Reports',
-    icon: 'file-text',
+    icon: <FileText />,
     path: '/reports',
     type: 'link',
   },
   {
     name: 'List Page',
-    icon: 'list',
+    icon: <List />,
     path: '/list_page',
     type: 'link',
   },
   {
     name: 'Log In',
-    icon: 'log-in',
+    icon: <LogIn />,
     path: '/log_in',
     type: 'link',
   },
   {
     name: 'Forgot Password',
-    icon: 'key',
+    icon: <Key />,
     path: '/forgot_password',
     type: 'link',
   },
   {
     name: 'Register',
-    icon: 'plus-circle',
+    icon: <PlusCircle />,
     path: '/register',
     type: 'link',
   },
