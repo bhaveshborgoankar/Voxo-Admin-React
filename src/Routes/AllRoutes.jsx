@@ -1,15 +1,16 @@
 import Dashboard from '../Components/Dashboard';
+import AllUsers from '../Components/Users/All Users';
 export const routes = [
   {
     path: '/',
     name: 'dashboard',
     Component: <Dashboard />,
   },
-  //   {
-  //     path: '/all_users',
-  //     name: 'allUsers',
-  //     component: allUsers,
-  //   },
+  {
+    path: '/all_users',
+    name: 'allUsers',
+    Component: <AllUsers />,
+  },
   //   {
   //     path: '/add_new_user',
   //     name: 'add_new_user',
