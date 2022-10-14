@@ -1,5 +1,6 @@
 import Dashboard from '../Components/Dashboard';
 import AllUsers from '../Components/Users/All Users';
+import AddNewUsers from '../Components/Users/Add New User';
 export const routes = [
   {
     path: '/',
@@ -11,124 +12,124 @@ export const routes = [
     name: 'allUsers',
     Component: <AllUsers />,
   },
-  //   {
-  //     path: '/add_new_user',
-  //     name: 'add_new_user',
-  //     component: add_new_user,
-  //   },
+  {
+    path: '/add_new_user',
+    name: 'add_new_user',
+    Component: <AddNewUsers />,
+  },
   //   {
   //     path: '/order_list',
   //     name: 'order_list',
-  //     component: order_list,
+  //     Component: order_list,
   //   },
   //   {
   //     path: '/order_detail',
   //     name: 'order_detail',
-  //     component: order_detail,
+  //     Component: order_detail,
   //   },
   //   {
   //     path: '/order_tracking',
   //     name: 'order_tracking',
-  //     component: order_tracking,
+  //     Component: order_tracking,
   //   },
   //   {
   //     path: '/vendor_list',
   //     name: 'vendor_list',
-  //     component: vendor_list,
+  //     Component: vendor_list,
   //   },
   //   {
   //     path: '/create_vendor',
   //     name: 'create_vendor',
-  //     component: create_vendor,
+  //     Component: create_vendor,
   //   },
   //   {
   //     path: '/translation',
   //     name: 'translation',
-  //     component: translation,
+  //     Component: translation,
   //   },
   //   {
   //     path: '/currency_rate',
   //     name: 'currency_rate',
-  //     component: currency_rate,
+  //     Component: currency_rate,
   //   },
   //   {
   //     path: '/taxes',
   //     name: 'taxes',
-  //     component: taxes,
+  //     Component: taxes,
   //   },
   //   {
   //     path: '/products',
   //     name: 'products',
-  //     component: products,
+  //     Component: products,
   //   },
   //   {
   //     path: '/add_product',
   //     name: 'add_product',
-  //     component: add_product,
+  //     Component: add_product,
   //   },
   //   {
   //     path: '/menu_lists',
   //     name: 'menu_lists',
-  //     component: menu_lists,
+  //     Component: menu_lists,
   //   },
   //   {
   //     path: '/create_menu',
   //     name: 'create_menu',
-  //     component: create_menu,
+  //     Component: create_menu,
   //   },
   //   {
   //     path: '/coupon_list',
   //     name: 'coupon_list',
-  //     component: coupon_list,
+  //     Component: coupon_list,
   //   },
   //   {
   //     path: '/create_coupon',
   //     name: 'create_coupon',
-  //     component: create_coupon,
+  //     Component: create_coupon,
   //   },
   //   {
   //     path: '/product_review',
   //     name: 'product_review',
-  //     component: product_review,
+  //     Component: product_review,
   //   },
   //   {
   //     path: '/invoice',
   //     name: 'invoice',
-  //     component: invoice,
+  //     Component: invoice,
   //   },
   //   {
   //     path: '/support_ticket',
   //     name: 'support_ticket',
-  //     component: support_ticket,
+  //     Component: support_ticket,
   //   },
   //   {
   //     path: '/profile_setting',
   //     name: 'profile_setting',
-  //     component: profile_setting,
+  //     Component: profile_setting,
   //   },
   //   {
   //     path: '/reports',
   //     name: 'reports',
-  //     component: reports,
+  //     Component: reports,
   //   },
   //   {
   //     path: '/list_page',
   //     name: 'list_page',
-  //     component: list_page,
+  //     Component: list_page,
   //   },
   //   {
   //     path: '/log_in',
   //     name: 'log_in',
-  //     component: log_in,
+  //     Component: log_in,
   //   },
   //   {
   //     path: '/forgot_password',
   //     name: 'forgot_password',
-  //     component: forgot_password,
+  //     Component: forgot_password,
   //   },
   //   {
   //     path: '/register',
   //     name: 'register',
-  //     component: register,
+  //     Component: register,
   //   },
 ];
