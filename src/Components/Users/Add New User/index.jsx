@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardBody, Col, Container, Row, TabContent, TabPane } from 'reactstrap';
 import { AddNewUser } from '../../../Constant';
 import TitleHeading from '../../CommonComponents/TitleHeading';
@@ -6,6 +6,7 @@ import AccountTabData from './AccountTabData';
 import PermissionTabData from './PermissionTabData';
 import UserNav from './UserNav';
 const AddNewUsers = () => {
+  const [activeTab, setActiveTab] = useState(1);
   return (
     <>
       <TitleHeading title={AddNewUser} />
@@ -16,13 +17,13 @@ const AddNewUsers = () => {
               <Col sm='12'>
                 <Card>
                   <CardBody>
-                    <UserNav />
-                    <TabContent className='tab-content' id='pills-tabContent'>
-                      <TabPane className='fade show active' id='pills-home' role='tabpanel'>
+                    <UserNav setActiveTab={setActiveTab} activeTab={activeTab} />
+                    <TabContent className='tab-content' i activeTab={activeTab}>
+                      <TabPane className={`fade ${activeTab === 1 ? 'show active' : ''}`}>
                         <AccountTabData />
                       </TabPane>
 
-                      <TabPane className='fade' id='pills-profile' role='tabpanel'>
+                      <TabPane className={`fade ${activeTab === 2 ? 'show active' : ''}`}>
                         <PermissionTabData />
                       </TabPane>
                     </TabContent>

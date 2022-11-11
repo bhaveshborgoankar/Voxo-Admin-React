@@ -1,42 +1,46 @@
 import React from 'react';
+import { Col, Form, Input, Label, Row } from 'reactstrap';
+import { ConfirmPassword, EmailAddress, FirstName, Password, ProductInformation, Submit } from '../../../Constant';
+import { Btn } from '../../../AbstractElements';
 
 const AccountTabData = () => {
   return (
-    <form className='theme-form theme-form-2 mega-form'>
+    <Form className='theme-form theme-form-2 mega-form'>
       <div className='card-header-1'>
-        <h5>Product Information</h5>
+        <h5>{ProductInformation}</h5>
       </div>
 
-      <div className='row'>
-        <div className='mb-4 row align-items-center'>
-          <label className='form-label-title col-lg-2 col-md-3 mb-0'>First Name</label>
-          <div className='col-md-9 col-lg-10'>
-            <input className='form-control' type='text' />
-          </div>
-        </div>
+      <Row>
+        <Row className='mb-4 align-items-center'>
+          <Label className='form-label-title col-lg-2 col-md-3 mb-0'>{FirstName}</Label>
+          <Col md='9' lg='10'>
+            <Input className='form-control' type='text' />
+          </Col>
+        </Row>
 
-        <div className='mb-4 row align-items-center'>
-          <label className='col-lg-2 col-md-3 col-form-label form-label-title'>Email Address</label>
-          <div className='col-md-9 col-lg-10'>
-            <input className='form-control' type='email' />
-          </div>
-        </div>
+        <Row className='mb-4 align-items-center'>
+          <Label className='col-lg-2 col-md-3 col-form-label form-label-title'>{EmailAddress}</Label>
+          <Col md='9' lg='10'>
+            <Input className='form-control' type='email' />
+          </Col>
+        </Row>
 
-        <div className='mb-4 row align-items-center'>
-          <label className='col-lg-2 col-md-3 col-form-label form-label-title'>Password</label>
-          <div className='col-md-9 col-lg-10'>
-            <input className='form-control' type='password' />
-          </div>
-        </div>
+        <Row className='mb-4 align-items-center'>
+          <Label className='col-lg-2 col-md-3 col-form-label form-label-title'>{Password}</Label>
+          <Col md='9' lg='10'>
+            <Input className='form-control' type='password' />
+          </Col>
+        </Row>
 
-        <div className='row align-items-center'>
-          <label className='col-lg-2 col-md-3 col-form-label form-label-title'>Confirm Password</label>
-          <div className='col-md-9 col-lg-10'>
-            <input className='form-control' type='password' />
-          </div>
-        </div>
-      </div>
-    </form>
+        <Row className='align-items-center'>
+          <Label className='col-lg-2 col-md-3 col-form-label form-label-title'>{ConfirmPassword}</Label>
+          <Col md='9' lg='10'>
+            <Input className='form-control' type='password' />
+          </Col>
+        </Row>
+        <Btn attrBtn={{ className: 'btn-theme theme-bg-color mt-3 d-inline-block w-auto', type: 'button' }}>{Submit}</Btn>
+      </Row>
+    </Form>
   );
 };
 

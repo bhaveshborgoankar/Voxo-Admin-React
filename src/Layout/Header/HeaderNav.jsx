@@ -133,7 +133,7 @@ const HeaderNav = () => {
           <li>
             <a href='#javascript'>
               <Phone />
-              <span>Spports Tickets</span>
+              <span>Support Tickets</span>
             </a>
           </li>
           <li>

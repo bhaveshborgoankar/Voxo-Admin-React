@@ -1,6 +1,9 @@
 import Dashboard from '../Components/Dashboard';
 import AllUsers from '../Components/Users/All Users';
 import AddNewUsers from '../Components/Users/Add New User';
+import OrderListContain from '../Components/Orders/OrderList';
+import OrderDetails from '../Components/Orders/OrderDetails';
+import OrderTraching from '../Components/Orders/OrderTracking';
 export const routes = [
   {
     path: '/',
@@ -17,21 +20,21 @@ export const routes = [
     name: 'add_new_user',
     Component: <AddNewUsers />,
   },
-  //   {
-  //     path: '/order_list',
-  //     name: 'order_list',
-  //     Component: order_list,
-  //   },
-  //   {
-  //     path: '/order_detail',
-  //     name: 'order_detail',
-  //     Component: order_detail,
-  //   },
-  //   {
-  //     path: '/order_tracking',
-  //     name: 'order_tracking',
-  //     Component: order_tracking,
-  //   },
+  {
+    path: '/order_list',
+    name: 'order_list',
+    Component: <OrderListContain />,
+  },
+  {
+    path: '/order_detail',
+    name: 'order_detail',
+    Component: <OrderDetails />,
+  },
+  {
+    path: '/order_tracking',
+    name: 'order_tracking',
+    Component: <OrderTraching />,
+  },
   //   {
   //     path: '/vendor_list',
   //     name: 'vendor_list',

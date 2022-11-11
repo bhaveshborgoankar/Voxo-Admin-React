@@ -409,3 +409,26 @@ export const AllUserData = [
     ),
   },
 ];
+
+export const AccountData = [
+  {
+    id: 1,
+    title: 'Product Related Permission',
+    child: [
+      { id: 1, subTitle: 'Add Product', span1: 'Allow', span2: 'Deny', name: 'opinion' },
+      { id: 2, subTitle: 'Update Product', span1: 'Allow', span2: 'Deny', name: 'Update' },
+      { id: 3, subTitle: 'Delete Product', span1: 'Allow', span2: 'Deny', name: 'Update' },
+      { id: 4, subTitle: 'Apply Product', span1: 'Allow', span2: 'Deny', name: 'Update' },
+    ],
+  },
+  {
+    id: 2,
+    title: 'Category Related Permission',
+    child: [
+      { id: 1, subTitle: 'Add Product', span1: 'Allow', span2: 'Deny', name: 'opinion' },
+      { id: 2, subTitle: 'Update Product', span1: 'Allow', span2: 'Deny', name: 'Update' },
+      { id: 3, subTitle: 'Delete Product', span1: 'Allow', span2: 'Deny', name: 'Update' },
+      { id: 4, subTitle: 'Apply Product', span1: 'Allow', span2: 'Deny', name: 'Update' },
+    ],
+  },
+];

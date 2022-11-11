@@ -1,165 +1,41 @@
-import React from 'react';
-
+import React, { Fragment } from 'react';
+import { Row, Form, Label } from 'reactstrap';
+import { AccountData } from '../../../Data/Users/AllUser';
 const PermissionTabData = () => {
   return (
     <>
-      <div className='card-header-1'>
-        <h5>Product Related Permition</h5>
-      </div>
-      <div className='mb-4 row align-items-center'>
-        <label className='col-md-2 mb-0'>Add Product</label>
-        <div className='col-md-9'>
-          <form className='radio-section'>
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Allow</span>
-            </label>
+      {AccountData &&
+        AccountData.map((elem) => {
+          return (
+            <Fragment>
+              <div className='card-header-1'>
+                <h5>{elem?.title}</h5>
+              </div>
+              {elem?.child.map((item) => {
+                return (
+                  <Row className='mb-4 align-items-center' key={item.id}>
+                    <label className='col-md-2 mb-0'>{item.subTitle}</label>
+                    <div className='col-md-9'>
+                      <Form className='radio-section'>
+                        <Label>
+                          <input type='radio' name={item.name} />
+                          <i></i>
+                          <span>{item.span1}</span>
+                        </Label>
 
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Deny</span>
-            </label>
-          </form>
-        </div>
-      </div>
-
-      <div className='mb-4 row align-items-center'>
-        <label className='col-md-2 mb-0'>Update Product</label>
-        <div className='col-md-9'>
-          <form className='radio-section'>
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Allow</span>
-            </label>
-
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Deny</span>
-            </label>
-          </form>
-        </div>
-      </div>
-
-      <div className='mb-4 row align-items-center'>
-        <label className='col-md-2 mb-0'>Delete Product</label>
-        <div className='col-md-9'>
-          <form className='radio-section'>
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Allow</span>
-            </label>
-
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Deny</span>
-            </label>
-          </form>
-        </div>
-      </div>
-
-      <div className='mb-4 row align-items-center'>
-        <label className='col-md-2 mb-0'>Apply Discount</label>
-        <div className='col-md-9'>
-          <form className='radio-section'>
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Allow</span>
-            </label>
-
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Deny</span>
-            </label>
-          </form>
-        </div>
-      </div>
-
-      <div className='card-header-1'>
-        <h5>Category Related Permition</h5>
-      </div>
-      <div className='mb-4 row align-items-center'>
-        <label className='col-md-2 mb-0'>Add Product</label>
-        <div className='col-md-9'>
-          <form className='radio-section'>
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Allow</span>
-            </label>
-
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Deny</span>
-            </label>
-          </form>
-        </div>
-      </div>
-
-      <div className='mb-4 row align-items-center'>
-        <label className='col-md-2 mb-0'>Update Product</label>
-        <div className='col-md-9'>
-          <form className='radio-section'>
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Allow</span>
-            </label>
-
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Deny</span>
-            </label>
-          </form>
-        </div>
-      </div>
-
-      <div className='mb-4 row align-items-center'>
-        <label className='col-md-2 mb-0'>Delete Product</label>
-        <div className='col-md-9'>
-          <form className='radio-section'>
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Allow</span>
-            </label>
-
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Deny</span>
-            </label>
-          </form>
-        </div>
-      </div>
-
-      <div className='mb-4 row align-items-center'>
-        <label className='col-md-2 mb-0'>Apply Discount</label>
-        <div className='col-md-9'>
-          <form className='radio-section'>
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Allow</span>
-            </label>
-
-            <label>
-              <input type='radio' name='opinion' />
-              <i></i>
-              <span>Deny</span>
-            </label>
-          </form>
-        </div>
-      </div>
+                        <Label>
+                          <input type='radio' name={item.name} />
+                          <i></i>
+                          <span>{item.span2}</span>
+                        </Label>
+                      </Form>
+                    </div>
+                  </Row>
+                );
+              })}
+            </Fragment>
+          );
+        })}
     </>
   );
 };
