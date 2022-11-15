@@ -1,26 +1,24 @@
 import React from 'react';
 import DataTable from 'react-data-table-component';
 import { Card, CardBody, Col, Container, Row } from 'reactstrap';
-import { AllUserss } from '../../../Constant';
-import { AllUserColumn, AllUserData } from '../../../Data/Users/AllUser';
-import Pagination from '../../CommonComponents/Pagination';
+import { ProductsList } from '../../../Constant';
+import { ProductListData, ProductsColumns } from '../../../Data/Products';
 import TitleHeading from '../../CommonComponents/TitleHeading';
-const AllUsers = () => {
+const Products = () => {
   return (
     <>
-      <TitleHeading btn={true} title={AllUserss} />
+      <TitleHeading title={ProductsList} />
       <Container fluid={true}>
         <Row>
           <Col sm='12'>
             <Card>
               <CardBody>
                 <div>
-                  <div className='table-responsive table-desi'>
-                    <DataTable data={AllUserData} columns={AllUserColumn} selectableRows pagination />
+                  <div className='table-responsive table-desi table-product'>
+                    <DataTable columns={ProductsColumns} data={ProductListData} />
                   </div>
                 </div>
               </CardBody>
-              <Pagination />
             </Card>
           </Col>
         </Row>
@@ -28,4 +26,4 @@ const AllUsers = () => {
     </>
   );
 };
-export default AllUsers;
+export default Products;

@@ -4,6 +4,10 @@ import AddNewUsers from '../Components/Users/Add New User';
 import OrderListContain from '../Components/Orders/OrderList';
 import OrderDetails from '../Components/Orders/OrderDetails';
 import OrderTraching from '../Components/Orders/OrderTracking';
+import Venderlist from '../Components/Venders/Venderlist';
+import CreateVender from '../Components/Venders/CreateVendor';
+import Products from '../Components/Products/Product';
+import AddnewProductsContain from '../Components/Products/AddNewProducts';
 export const routes = [
   {
     path: '/',
@@ -35,16 +39,16 @@ export const routes = [
     name: 'order_tracking',
     Component: <OrderTraching />,
   },
-  //   {
-  //     path: '/vendor_list',
-  //     name: 'vendor_list',
-  //     Component: vendor_list,
-  //   },
-  //   {
-  //     path: '/create_vendor',
-  //     name: 'create_vendor',
-  //     Component: create_vendor,
-  //   },
+  {
+    path: '/vendor_list',
+    name: 'vendor_list',
+    Component: <Venderlist />,
+  },
+  {
+    path: '/create_vendor',
+    name: 'create_vendor',
+    Component: <CreateVender />,
+  },
   //   {
   //     path: '/translation',
   //     name: 'translation',
@@ -60,16 +64,16 @@ export const routes = [
   //     name: 'taxes',
   //     Component: taxes,
   //   },
-  //   {
-  //     path: '/products',
-  //     name: 'products',
-  //     Component: products,
-  //   },
-  //   {
-  //     path: '/add_product',
-  //     name: 'add_product',
-  //     Component: add_product,
-  //   },
+  {
+    path: '/products',
+    name: 'products',
+    Component: <Products />,
+  },
+  {
+    path: '/add_product',
+    name: 'add_product',
+    Component: <AddnewProductsContain />,
+  },
   //   {
   //     path: '/menu_lists',
   //     name: 'menu_lists',

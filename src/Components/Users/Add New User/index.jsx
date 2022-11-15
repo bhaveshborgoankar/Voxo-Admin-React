@@ -18,7 +18,7 @@ const AddNewUsers = () => {
                 <Card>
                   <CardBody>
                     <UserNav setActiveTab={setActiveTab} activeTab={activeTab} />
-                    <TabContent className='tab-content' i activeTab={activeTab}>
+                    <TabContent className='tab-content' activeTab={activeTab}>
                       <TabPane className={`fade ${activeTab === 1 ? 'show active' : ''}`}>
                         <AccountTabData />
                       </TabPane>

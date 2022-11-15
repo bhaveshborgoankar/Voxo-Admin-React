@@ -7,7 +7,7 @@ const PermissionTabData = () => {
       {AccountData &&
         AccountData.map((elem) => {
           return (
-            <Fragment>
+            <Fragment key={elem.id}>
               <div className='card-header-1'>
                 <h5>{elem?.title}</h5>
               </div>
