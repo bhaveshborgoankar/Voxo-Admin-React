@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import DataTable from 'react-data-table-component';
 import { Card, CardBody, Col, Container, Row } from 'reactstrap';
 import { ProductsList } from '../../../Constant';
 import { ProductListData, ProductsColumns } from '../../../Data/Products';
+import CreateContextToggle from '../../../Helper/ToggleContext';
 import TitleHeading from '../../CommonComponents/TitleHeading';
 const Products = () => {
+  const { getProducts } = useContext(CreateContextToggle);
+  console.log('getProducts', getProducts);
+  const [allData, setAllData] = useState(ProductListData);
+  useEffect(() => {
+    getProducts.productname && setAllData((prev) => [...prev, getProducts]);
+  }, [getProducts]);
+  console.log('allData', allData);
+
   return (
     <>
       <TitleHeading title={ProductsList} />
@@ -15,7 +24,7 @@ const Products = () => {
               <CardBody>
                 <div>
                   <div className='table-responsive table-desi table-product'>
-                    <DataTable columns={ProductsColumns} data={ProductListData} />
+                    <DataTable columns={ProductsColumns} data={allData} />
                   </div>
                 </div>
               </CardBody>

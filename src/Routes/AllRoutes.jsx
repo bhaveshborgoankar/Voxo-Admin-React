@@ -8,6 +8,8 @@ import Venderlist from '../Components/Venders/Venderlist';
 import CreateVender from '../Components/Venders/CreateVendor';
 import Products from '../Components/Products/Product';
 import AddnewProductsContain from '../Components/Products/AddNewProducts';
+import Translation from '../Components/Localization/Translation';
+import CurrencyRate from '../Components/Localization/CurrencyRate';
 export const routes = [
   {
     path: '/',
@@ -49,16 +51,16 @@ export const routes = [
     name: 'create_vendor',
     Component: <CreateVender />,
   },
-  //   {
-  //     path: '/translation',
-  //     name: 'translation',
-  //     Component: translation,
-  //   },
-  //   {
-  //     path: '/currency_rate',
-  //     name: 'currency_rate',
-  //     Component: currency_rate,
-  //   },
+  {
+    path: '/translation',
+    name: 'translation',
+    Component: <Translation />,
+  },
+  {
+    path: '/currency_rate',
+    name: 'currency_rate',
+    Component: <CurrencyRate />,
+  },
   //   {
   //     path: '/taxes',
   //     name: 'taxes',
