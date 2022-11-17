@@ -10,6 +10,9 @@ import Products from '../Components/Products/Product';
 import AddnewProductsContain from '../Components/Products/AddNewProducts';
 import Translation from '../Components/Localization/Translation';
 import CurrencyRate from '../Components/Localization/CurrencyRate';
+import TaxesContain from '../Components/Localization/Taxes';
+import MenuListContain from '../Components/Menus/MenuList';
+import CreatedMenuContain from '../Components/Menus/CreateMenu';
 export const routes = [
   {
     path: '/',
@@ -61,11 +64,11 @@ export const routes = [
     name: 'currency_rate',
     Component: <CurrencyRate />,
   },
-  //   {
-  //     path: '/taxes',
-  //     name: 'taxes',
-  //     Component: taxes,
-  //   },
+  {
+    path: '/taxes',
+    name: 'taxes',
+    Component: <TaxesContain />,
+  },
   {
     path: '/products',
     name: 'products',
@@ -76,16 +79,16 @@ export const routes = [
     name: 'add_product',
     Component: <AddnewProductsContain />,
   },
-  //   {
-  //     path: '/menu_lists',
-  //     name: 'menu_lists',
-  //     Component: menu_lists,
-  //   },
-  //   {
-  //     path: '/create_menu',
-  //     name: 'create_menu',
-  //     Component: create_menu,
-  //   },
+  {
+    path: '/menu_lists',
+    name: 'menu_lists',
+    Component: <MenuListContain />,
+  },
+  {
+    path: '/create_menu',
+    name: 'create_menu',
+    Component: <CreatedMenuContain />,
+  },
   //   {
   //     path: '/coupon_list',
   //     name: 'coupon_list',

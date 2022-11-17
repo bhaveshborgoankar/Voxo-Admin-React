@@ -23,12 +23,12 @@ export const TaxesHeading = [
   },
 ];
 
-export const TaxesData = [
+export const TaxesDatas = [
   {
-    taxdetail: 'USASTE-PS6N0',
+    taxdetail: 'INDSTE-PS6N0',
     taxschedule: (
       <>
-        USASTCITY-6 <span class='theme-color'>*</span>
+        INDSTCITY-6 <span className='theme-color'>*</span>
       </>
     ),
     taxrate: '10%',
@@ -56,10 +56,10 @@ export const TaxesData = [
     ),
   },
   {
-    taxdetail: 'USASTE-PS6N0',
+    taxdetail: 'WISTE-PS6N0',
     taxschedule: (
       <>
-        USASTCITY-6 <span className='theme-color'>*</span>
+        WISTCITY-0 <span className='theme-color'>*</span>
       </>
     ),
     taxrate: '18%',
@@ -87,10 +87,10 @@ export const TaxesData = [
     ),
   },
   {
-    taxdetail: 'USASTE-PS6N0',
+    taxdetail: 'SASTE-PS0N0',
     taxschedule: (
       <>
-        USASTCITY-6 <span class='theme-color'>*</span>
+        SASTCITY-8 <span className='theme-color'>*</span>
       </>
     ),
     taxrate: '25%',
@@ -118,10 +118,10 @@ export const TaxesData = [
     ),
   },
   {
-    taxdetail: 'USASTE-PS6N0',
+    taxdetail: 'UKSTE-PS6N0',
     taxschedule: (
       <>
-        USASTCITY-6 <span class='theme-color'>*</span>
+        UKSTCITY-1 <span className='theme-color'>*</span>
       </>
     ),
     taxrate: '40%',
@@ -149,10 +149,10 @@ export const TaxesData = [
     ),
   },
   {
-    taxdetail: 'USASTE-PS6N0',
+    taxdetail: 'AUSSTE-PS6N0',
     taxschedule: (
       <>
-        USASTCITY-6 <span class='theme-color'>*</span>
+        AUSSTCITY-3 <span className='theme-color'>*</span>
       </>
     ),
     taxrate: '80%',
@@ -180,10 +180,10 @@ export const TaxesData = [
     ),
   },
   {
-    taxdetail: 'USASTE-PS6N0',
+    taxdetail: 'BRASTE-PS6N0',
     taxschedule: (
       <>
-        USASTCITY-6 <span class='theme-color'>*</span>
+        BRASTCITY-01 <span className='theme-color'>*</span>
       </>
     ),
     taxrate: '80%',

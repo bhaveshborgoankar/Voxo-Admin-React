@@ -1,13 +1,13 @@
 import React from 'react';
 import DataTable from 'react-data-table-component';
 import { Card, CardBody, Col, Container, Row } from 'reactstrap';
-import { CurrencyRates } from '../../Constant';
-import { CurrencyRateColumns, CurrencyRateData } from '../../Data/Localization/CurrencyRateData';
-import TitleHeading from '../CommonComponents/TitleHeading';
-const CurrencyRate = () => {
+import { MenuList } from '../../../Constant';
+import { AllMenuData, AllMenuList } from '../../../Data/AllMenu';
+import TitleHeading from '../../CommonComponents/TitleHeading';
+const MenuListContain = () => {
   return (
     <>
-      <TitleHeading title={CurrencyRates} />
+      <TitleHeading title={MenuList} />
       <Container fluid={true}>
         <Row>
           <Col sm='12'>
@@ -15,7 +15,7 @@ const CurrencyRate = () => {
               <CardBody>
                 <div>
                   <div className='table-responsive table-desi'>
-                    <DataTable data={CurrencyRateData} columns={CurrencyRateColumns} />
+                    <DataTable columns={AllMenuList} data={AllMenuData} selectableRows pagination className='user-table menu-list-table table table-striped' />
                   </div>
                 </div>
               </CardBody>
@@ -26,4 +26,4 @@ const CurrencyRate = () => {
     </>
   );
 };
-export default CurrencyRate;
+export default MenuListContain;
