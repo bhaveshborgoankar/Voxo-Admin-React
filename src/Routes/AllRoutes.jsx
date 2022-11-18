@@ -13,6 +13,7 @@ import CurrencyRate from '../Components/Localization/CurrencyRate';
 import TaxesContain from '../Components/Localization/Taxes';
 import MenuListContain from '../Components/Menus/MenuList';
 import CreatedMenuContain from '../Components/Menus/CreateMenu';
+import CouponList from '../Components/Coupons/CoupanList';
 export const routes = [
   {
     path: '/',
@@ -89,11 +90,11 @@ export const routes = [
     name: 'create_menu',
     Component: <CreatedMenuContain />,
   },
-  //   {
-  //     path: '/coupon_list',
-  //     name: 'coupon_list',
-  //     Component: coupon_list,
-  //   },
+  {
+    path: '/coupon_list',
+    name: 'coupon_list',
+    Component: <CouponList />,
+  },
   //   {
   //     path: '/create_coupon',
   //     name: 'create_coupon',

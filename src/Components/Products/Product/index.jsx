@@ -7,12 +7,11 @@ import CreateContextToggle from '../../../Helper/ToggleContext';
 import TitleHeading from '../../CommonComponents/TitleHeading';
 const Products = () => {
   const { getProducts } = useContext(CreateContextToggle);
-  console.log('getProducts', getProducts);
   const [allData, setAllData] = useState(ProductListData);
+  // console.log('getProdducts', getProducts);
   useEffect(() => {
     getProducts.productname && setAllData((prev) => [...prev, getProducts]);
   }, [getProducts]);
-  console.log('allData', allData);
 
   return (
     <>

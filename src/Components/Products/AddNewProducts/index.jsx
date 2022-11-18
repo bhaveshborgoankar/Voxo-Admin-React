@@ -11,8 +11,6 @@ import ProductInformation from './ProductInformation';
 import ProductVideo from './ProductVideo';
 import ShippingData from './ShippingData';
 import CreateContextToggle from '../../../Helper/ToggleContext';
-import UserImage from '../../../assets/images/users/1.jpg';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 const AddnewProductsContain = () => {
   const {
@@ -21,12 +19,10 @@ const AddnewProductsContain = () => {
     formState: { errors },
   } = useForm();
   const navigate = useNavigate();
-  const { setGetProducts, getProducts } = useContext(CreateContextToggle);
+  const { setGetProducts } = useContext(CreateContextToggle);
   const onSubmit = (data) => {
     if (data !== '') {
-      console.log('Data27', data);
       setGetProducts((prev) => ({ ...prev, ...data }));
-      // setGetProducts({ value: 1 });
       navigate('/products');
     } else {
       errors.showMessages();
