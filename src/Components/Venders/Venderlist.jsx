@@ -17,7 +17,7 @@ const Venderlist = () => {
             <Card>
               <CardBody>
                 <div className='table-responsive table-desi'>
-                  <DataTable columns={memoVenderListHeadingColumn} data={memoVenderListHeadingData} pagination />
+                  <DataTable columns={memoVenderListHeadingColumn} data={memoVenderListHeadingData} pagination selectableRows />
                 </div>
               </CardBody>
             </Card>

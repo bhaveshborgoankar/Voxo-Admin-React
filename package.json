@@ -22,6 +22,7 @@
     "react-hook-form": "^7.39.4",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
+    "react-select-search": "^4.1.6",
     "reactstrap": "^9.1.4",
     "sass": "^1.55.0",
     "sass-migrator": "^1.7.1",

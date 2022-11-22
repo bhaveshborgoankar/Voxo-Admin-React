@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Row } from 'reactstrap';
+import { shippingaddress, summery } from '../../../Constant';
 const OrderSummary = () => {
   return (
     <Col xl='4'>
       <div className='order-success'>
         <Row className='g-4'>
-          <h4>summery</h4>
+          <h4>{summery}</h4>
           <ul className='order-details'>
             <li>Order ID: 5563853658932</li>
             <li>Order Date: October 22, 2018</li>
             <li>Order Total: $907.28</li>
           </ul>
 
-          <h4>shipping address</h4>
+          <h4>{shippingaddress}</h4>
           <ul className='order-details'>
             <li>Gerg Harvell</li>
             <li>568, Suite Ave.</li>

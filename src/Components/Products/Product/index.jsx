@@ -8,7 +8,6 @@ import TitleHeading from '../../CommonComponents/TitleHeading';
 const Products = () => {
   const { getProducts } = useContext(CreateContextToggle);
   const [allData, setAllData] = useState(ProductListData);
-  // console.log('getProdducts', getProducts);
   useEffect(() => {
     getProducts.productname && setAllData((prev) => [...prev, getProducts]);
   }, [getProducts]);

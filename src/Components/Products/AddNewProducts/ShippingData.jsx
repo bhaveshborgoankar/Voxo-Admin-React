@@ -1,34 +1,35 @@
 import React from 'react';
+import { Card, CardBody, Col, Input, Label, Row } from 'reactstrap';
 
 const ShippingData = () => {
   return (
-    <div className='card'>
-      <div className='card-body'>
+    <Card>
+      <CardBody>
         <div className='card-header-2'>
           <h5>Shipping</h5>
         </div>
 
-        <div className='row'>
-          <div className='mb-4 row align-items-center'>
-            <label className='form-label-title col-sm-2 mb-0'>Weight (kg)</label>
-            <div className='col-sm-10'>
-              <input className='form-control' type='number' placeholder='Weight' />
-            </div>
-          </div>
+        <Row>
+          <Row className='mb-4 align-items-center'>
+            <Label className='form-label-title col-sm-2 mb-0'>Weight (kg)</Label>
+            <Col sm='10'>
+              <Input className='form-control' type='number' placeholder='Weight' />
+            </Col>
+          </Row>
 
-          <div className='row align-items-center'>
-            <label className='col-sm-2 col-form-label form-label-title'>Dimensions (cm)</label>
-            <div className='col-sm-10'>
+          <Row className='align-items-center'>
+            <Label className='col-sm-2 col-form-label form-label-title'>Dimensions (cm)</Label>
+            <Col sm='10'>
               <select className='js-example-basic-single w-100' name='state'>
                 <option>Length</option>
                 <option>Width</option>
                 <option>Height</option>
               </select>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </Col>
+          </Row>
+        </Row>
+      </CardBody>
+    </Card>
   );
 };
 

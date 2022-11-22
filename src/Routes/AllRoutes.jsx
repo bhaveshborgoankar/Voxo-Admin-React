@@ -14,6 +14,8 @@ import TaxesContain from '../Components/Localization/Taxes';
 import MenuListContain from '../Components/Menus/MenuList';
 import CreatedMenuContain from '../Components/Menus/CreateMenu';
 import CouponList from '../Components/Coupons/CoupanList';
+import CreateCouponContain from '../Components/Coupons/CreateCoupon';
+import ProductReviewContain from '../Components/ProductReview';
 export const routes = [
   {
     path: '/',
@@ -95,16 +97,16 @@ export const routes = [
     name: 'coupon_list',
     Component: <CouponList />,
   },
-  //   {
-  //     path: '/create_coupon',
-  //     name: 'create_coupon',
-  //     Component: create_coupon,
-  //   },
-  //   {
-  //     path: '/product_review',
-  //     name: 'product_review',
-  //     Component: product_review,
-  //   },
+  {
+    path: '/create_coupon',
+    name: 'create_coupon',
+    Component: <CreateCouponContain />,
+  },
+  {
+    path: '/product_review',
+    name: 'product_review',
+    Component: <ProductReviewContain />,
+  },
   //   {
   //     path: '/invoice',
   //     name: 'invoice',

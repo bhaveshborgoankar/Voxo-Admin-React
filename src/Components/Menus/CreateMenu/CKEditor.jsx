@@ -5,10 +5,10 @@ const CKEditorContain = () => {
   return (
     <CKEditor
       editor={ClassicEditor}
-      data='<p>Hello from CKEditor 5!</p>'
+      data='<p>Here we can write the words.........</p>'
       onReady={(editor) => {
         // You can store the "editor" and use when it is needed.
-        console.log('Editor is ready to use!', editor);
+        // console.log('Editor is ready to use!', editor);
       }}
       onChange={(event, editor) => {
         const data = editor.getData();

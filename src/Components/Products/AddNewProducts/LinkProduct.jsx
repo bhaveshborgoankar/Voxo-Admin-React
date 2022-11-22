@@ -1,30 +1,32 @@
 import React from 'react';
+import { Card, CardBody, Col, Input, Label, Row } from 'reactstrap';
+import { CrossSells, Upsells } from '../../../Constant';
 
 const LinkProduct = () => {
   return (
-    <div className='card'>
-      <div className='card-body'>
+    <Card>
+      <CardBody>
         <div className='card-header-2'>
           <h5>Link Products</h5>
         </div>
 
-        <div className='row'>
-          <div className='mb-4 row align-items-center'>
-            <label className='form-label-title col-sm-2 mb-0'>Upsells</label>
-            <div className='col-sm-10'>
-              <input className='form-control' type='search' />
-            </div>
-          </div>
+        <Row>
+          <Row className='mb-4 align-items-center'>
+            <Label className='form-label-title col-sm-2 mb-0'>{Upsells}</Label>
+            <Col sm='10'>
+              <Input className='form-control' type='search' />
+            </Col>
+          </Row>
 
-          <div className='row align-items-center'>
-            <label className='form-label-title col-sm-2 mb-0'>Cross-Sells</label>
-            <div className='col-sm-10'>
-              <input className='form-control' type='search' />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          <Row className='align-items-center'>
+            <Label className='form-label-title col-sm-2 mb-0'>{CrossSells}</Label>
+            <Col sm='10'>
+              <Input className='form-control' type='search' />
+            </Col>
+          </Row>
+        </Row>
+      </CardBody>
+    </Card>
   );
 };
 

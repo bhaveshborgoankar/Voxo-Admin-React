@@ -1,13 +1,14 @@
 import React from 'react';
+import { EditItems, items } from '../../../Constant';
 
 const TableHead = () => {
   return (
     <thead>
       <tr>
-        <th colSpan='2'>Items</th>
+        <th colSpan='2'>{items}</th>
         <th className='text-end' colSpan='2'>
           <a href='#javascript' className='theme-color'>
-            Edit Items
+            {EditItems}
           </a>
         </th>
       </tr>

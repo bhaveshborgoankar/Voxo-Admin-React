@@ -8,6 +8,7 @@ const ToggleProvider = (props) => {
   const [getProducts, setGetProducts] = useState({
     productimage: <img src={UserImage} className='img-fluid' width={70} alt='' />,
     published: <span className={'lnr lnr-cross-circle'}></span>,
+    qty: 1,
     option: (
       <ul>
         <li>

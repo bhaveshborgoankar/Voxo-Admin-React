@@ -1,30 +1,32 @@
 import React from 'react';
+import { Card, CardBody, Col, Input, Label, Row } from 'reactstrap';
+import { Images, ProductImages, ThumbnailImage } from '../../../Constant';
 
 const ProductImage = () => {
   return (
-    <div className='card'>
-      <div className='card-body'>
+    <Card>
+      <CardBody>
         <div className='card-header-2'>
-          <h5>Product Images</h5>
+          <h5>{ProductImages}</h5>
         </div>
 
-        <div className='row'>
-          <div className='mb-4 row align-items-center'>
-            <label className='col-sm-2 col-form-label form-label-title'>Images</label>
-            <div className='col-sm-10'>
-              <input className='form-control form-choose' type='file' id='formFileMultiple' />
-            </div>
-          </div>
+        <Row>
+          <Row className='mb-4 align-items-center'>
+            <Label className='col-sm-2 col-form-label form-label-title'>{Images}</Label>
+            <Col sm='10'>
+              <Input className='form-control form-choose' type='file' id='formFileMultiple' />
+            </Col>
+          </Row>
 
-          <div className='row align-items-center'>
-            <label className='col-sm-2 col-form-label form-label-title'>Thumbnail Image</label>
-            <div className='col-sm-10'>
-              <input className='form-control form-choose' type='file' id='formFileMultiple1' />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          <Row className='align-items-center'>
+            <Label className='col-sm-2 col-form-label form-label-title'>{ThumbnailImage}</Label>
+            <Col sm='10'>
+              <Input className='form-control form-choose' type='file' id='formFileMultiple1' />
+            </Col>
+          </Row>
+        </Row>
+      </CardBody>
+    </Card>
   );
 };
 
